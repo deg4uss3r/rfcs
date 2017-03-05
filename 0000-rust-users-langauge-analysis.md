@@ -64,7 +64,5 @@ Alternatives to be considered are to have more IRC or Git issue involvement on w
 - Can we get experts, advanced, intermediate, and beginner users alike to use this system?
 - FEEDBACK!
 
-# References
-[references]: #references
-[1]: http://www.psych.purdue.edu/~willia55/392F-'06/HewstoneRubinWillis.pdf "In-Group Bias"
 
+[1]: http://www.psych.purdue.edu/~willia55/392F-'06/HewstoneRubinWillis.pdf "In-Group Bias"
