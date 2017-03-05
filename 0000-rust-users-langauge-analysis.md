@@ -6,7 +6,7 @@
 # Summary
 [summary]: #summary
 
-As the [Rust](https://www.rust-lang.org) language evolves, it's important to continue to implement new features and use them benefit the entir community of Rust-lang programmers. This means we need to understand:
+As the [Rust](https://www.rust-lang.org) language evolves, it's important to continue to implement new features and use them benefit the entire community of Rust-lang programmers. This means we need to understand:
 * _how_ developers are using the language
 * _what_ they normally struggle with
 * _what_ can give the Rust community the biggest benefits either as a future RFC or just an additional chapter to the [Rust book](https://doc.rust-lang.org/book/) or [Rust By Example](http://rustbyexample.com/).
@@ -24,7 +24,7 @@ As [d33](https://news.ycombinator.com/user?id=d33) first mentioned, I am in favo
 1. How do users solve common (and difficult) programming challenges?
     - Doing this will allow the Rust community to see what users are using feature-wise (e.g. are people actually using `?`?) and also how long a user takes for challenges like fizz-buzz.
     - In addition to the added benefit to Rust, we can also build a community that has beginner challenges/speed tests for users, by users, and reviewed by users and experts. Including this into our culture would be a huge benefit. Already the Rust community is amazing with IRC, the [Rust By Example](http://rustbyexample.com/) book, and the friendly nature of Rust programmers. Including challenges like these would introduce more opportunities for code review (on both the reviewer and the reviewee sides), which would be beneficial for community involvement. For this to be successful, feedback is required, which can be difficult and require additional community engagement.
-    - This will require a variety of challenges--short/easy ones that could be reviewed quickly by experts, and more difficult ones that beginners can look at and _learn something from).
+    - This will require a variety of challenges--short/easy ones that could be reviewed quickly by experts, and more difficult ones that beginners can look at and _learn something from_.
 2. Track anonymous programming occurring in the [Rust Playground](https://play.rust-lang.org).
     - My background is in python programming. I frequently use the Python IDLE as a quick sanity check/verification that my idea isn't totally wrong. This is also how I (and I expect many others) use the [Rust Playground](https://play.rust-lang.org). Allowing the Rust community to have data on what people are putting into the Playground will allow us to see the following:
       * common mistakes people make (e.g. a missing semi-colon)
@@ -45,7 +45,7 @@ I'm the first in my company to really use Rust, and all of my code is proprietar
 
 Having expert programmers review PRs by beginner and advanced users will be necessary for this to work and benefit the community. Thus, keeping the challenges short and familiar will be beneficial to start with as finding the time to review code is always difficult. 
 
-This proposal could be a useful complement to the Rust Book by allowing new programmers to try samples out and get feedback on them. While I love reading about code, I learn a lot more by writing it. Getting advice like "return an Option unstead of a -1!" would have been useful when I first started using Rust. This would allow users to begin with writing idiomatic Rust code, rather than writing in the style of the language they're used to, just in Rust. Since certain elements of safe rust code are idiomatic (e.g. iterators), this would result in safer, better code from the beginning, rather than being acquired over a longer period of time.
+This proposal could be a useful complement to the Rust Book by allowing new programmers to try samples out and get feedback on them. While I love reading about code, I learn a lot more by writing it. Getting advice like "return an `Option` instead of a -1!" would have been useful when I first started using Rust. This would allow users to begin with writing idiomatic Rust code, rather than writing in the style of the language they're used to, just in Rust. Since certain elements of safe rust code are idiomatic (e.g. iterators), this would result in safer, better code from the beginning, rather than being acquired over a longer period of time.
 
 We can host these challenges under the Rust Project and link directly to them from [Rust By Example](http://rustbyexample.com/) in the relevant places. As opposed to the examples there, the challenges should be more complex--focused solving a problem rather than teaching syntax, and they should build on concepts as users work through the book. There could also be a suggestion process by which users pick examples they'd like challenges for.
 
@@ -75,3 +75,4 @@ Alternatives to be considered are to have more IRC or Git issue involvement on w
 
 
 [1]: http://www.psych.purdue.edu/~willia55/392F-'06/HewstoneRubinWillis.pdf "In-Group Bias"
+
