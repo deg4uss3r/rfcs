@@ -16,11 +16,12 @@ The motivation for this RFC was Rust's [blog post on Ergonomics](https://blog.ru
 # Detailed design
 [design]: #detailed-design
 
-As [d33](https://news.ycombinator.com/user?id=d33) first mentioned I am in favor of adding this to the [Rust Playground](https://play.rust-lang.org). This should be in opt-in feature since it will track users keystrokes while on the site. My initial thoughts on this are three fold: 
+As [d33](https://news.ycombinator.com/user?id=d33) first mentioned I am in favor of adding this to the [Rust Playground](https://play.rust-lang.org). This should be in opt-in feature since it will track users keystrokes while on the site. To expand my initial thoughts on this are three fold:
 
-1. Have users solve common (and difficult) programming channels and submit them.
+1. Have users solve common (and difficult) programming challenges and submit them.
     - Doing this will allow the Rust community to not only see what users are using feature-wise (e.g. are people actually using `?`?) but also how long a user takes for challenges like fizz-buzz.
     - In addition to the added benefit to Rust, we can also build a community that has beginner challenges/speed tests for users, by users, and reviewed by users and experts. Including this into our culture would be a huge benefit. Already the Rust community is amazing with IRC, the [Rust By Example](http://rustbyexample.com/) book, and the friendly nature of Rust programmers. Adding in these challenges with not only formal language analysis done by Rust developers for the benefit of the language but also to the benefit of the direct user would increase community involvement. Though, it is _absolutely necessary_ that feedback happens for this to work. Feedback is difficult to do and will require even more community engagement.
+    - A varity of challenges will be needed. We need short and easy enough challenges for experts to review on their phones, or at a pub as well as challenges that beginners can look at and _learn something from_. 
 2. Track anonymous programming occurring in the [Rust Playground](https://play.rust-lang.org).
     - A lot of users use the [Rust Playground](https://play.rust-lang.org) just as I do almost like the Python IDLE. As a quick sanity check and a "can I even do this?" test. Allowing the Rust community to have data on what people are putting into the Playground will allow us to see what are the common mistakes people make (e.g. a missing semi-colon), the most common compiler errors, what errors are most often repeated by a user(s), what does the scenario look like when a user is defeated (e.g. gets multiple errors in a row and closes the session without a successful build), and how users overcome an error. 
     - In addition if user accounts are necessary for this to work or if user accounts are a good idea to implement for other reasons we can also look at what did the user look up in the [Rust Documentation](https://doc.rust-lang.org/std/) whilst programming on the playground. As useful as this would be anonymously it would not be appropriate; however, to inspect the user's session or cookies to track what they are browsing without explicit permission. I am not suggesting any tracking data _without_ complete agreement from the user.
@@ -50,7 +51,7 @@ Another major what-if is what if the users do not opt-in to tracking or have a f
 # Alternatives
 [alternatives]: #alternatives
 
-Alternatives to be considered are to have more IRC or Git issue involvement on what you're having issues with. Possibly voting on the Rust-lang website on RFCs and issues. Alternatives to this RFC would be more simplistic in nature and require less work from developers to spin up. 
+Alternatives to be considered are to have more IRC or Git issue involvement on what you're having issues with. Possibly voting on the Rust-lang website on RFCs and issues. Alternatives to this RFC would be more simplistic in nature and require less work from developers to spin up. Of course, more and more documentation thrown at the problem is an alternative as well. 
 
 # Unresolved questions
 [unresolved]: #unresolved-questions
