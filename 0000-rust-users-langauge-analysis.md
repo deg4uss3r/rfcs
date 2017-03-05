@@ -23,9 +23,9 @@ As [d33](https://news.ycombinator.com/user?id=d33) first mentioned I am in favor
     * In addition to the added benefit to Rust, we can also build a community that has beginner challenges/speed tests for users, by users, and reviewed by users and experts. Including this into our culture would be a huge benefit. Already the Rust community is amazing with IRC, the [Rust By Example](http://rustbyexample.com/) book, and the friendly nature of Rust programmers. Adding in these challenges with not only formal language analysis done by Rust developers for the benefit of the language but also to the benefit of the direct user would increase community involvement. Though, it is _absolutely necessary_ that feedback happens for this to work. Feedback is difficult to do and will require even more community engagement.
 2. Track anonymous programming occurring in the [Rust Playground](https://play.rust-lang.org).
     * A lot of users use the [Rust Playground](https://play.rust-lang.org) just as I do almost like the Python IDLE. As a quick sanity check and a "can I even do this?" test. Allowing the Rust community to have data on what people are putting into the Playground will allow us to see what are the common mistakes people make (e.g. a missing semi-colon), the most common compiler errors, what errors are most often repeated by a user(s), what does the scenario look like when a user is defeated (e.g. gets multiple errors in a row and closes the session without a successful build), and how users overcome an error. 
-    * In addition if user accounts are necessary for this to work or if user accounts are a good idea to implement for other reasons we can also look at what did the user look up in the [Rust Documentation](https://doc.rust-lang.org/std/) whilst programming on the playground. As useful as this would be anonymously it would not be appropriate properate; however, to inspect the user's session or cookies to track what they are browsing without explicit permission. I am not suggesting any tracking data _without_ complete agreement from the user.
+    * In addition if user accounts are necessary for this to work or if user accounts are a good idea to implement for other reasons we can also look at what did the user look up in the [Rust Documentation](https://doc.rust-lang.org/std/) whilst programming on the playground. As useful as this would be anonymously it would not be appropriate; however, to inspect the user's session or cookies to track what they are browsing without explicit permission. I am not suggesting any tracking data _without_ complete agreement from the user.
 
-We Must then publish results or have an API to explore the results so that the community can analyze results for themselves. I believe this will allow more direct RFCs with formal analysis and statistical evidence _to support_ their claims. 
+3. We Must then publish results or have an API to explore the results so that the community can analyze results for themselves. I believe this will allow more direct RFCs with formal analysis and statistical evidence _to support_ their claims. Without opening the data to the community we can fall to the same biases that are made when only a small subset of people review data[1]. 
 
 # How We Teach This
 [how-we-teach-this]: #how-we-teach-this
@@ -57,9 +57,14 @@ Alternatives to be considered are to have more IRC or Git issue involvement on w
 
 * How do we track users without violating privacy or the core values of the open source community?
 * How do we make the relevant results from this analysis make sense to our core developers (i.e the decision makers of features)?
-* Do we enable a user-account type design so we can see what the user looked up in the [Doc](https://doc.rust-lang.org/std/)s?
+* Do we enable a user-account type design so we can see what the user looked up in the [Docs](https://doc.rust-lang.org/std/)?
 * What challenges are necessary and appropriate?
 * Does having a Git repo à la [Year of Programming Challenges](https://github.com/YearOfProgramming/2017Challenges) make sense for the Rust community?
 * Will this fizzle out?
 * Can we get experts, advanced, intermediate, and beginner users alike to use this system?
 * FEEDBACK!
+
+# References
+[references]: #references
+[1](http://www.psych.purdue.edu/~willia55/392F-'06/HewstoneRubinWillis.pdf)
+
