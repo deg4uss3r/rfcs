@@ -34,7 +34,30 @@ As [d33](https://news.ycombinator.com/user?id=d33) first mentioned, I am in favo
     - A corollary to this would be the possible inclusion of user accounts. Perhaps we can link queries in the Rust Docs to what a user is working on in the Playground.
     - Obviously, any data collected should be appropriately anonymized, and it should be an "opt-in" program with a single-click opt-out.
 
-3. We should then open-source the data by publishing results/having an API to explore them. This way, the community can analyze the results themselves. This will allow RFCs and discussions to be more data-driven. It's important to avoid biases that occur when only a small subset of people review [data][1]. 
+3. We should then open-source the data by publishing results/having an API to explore them. This way, the community can analyze the results themselves. This will allow RFCs and discussions to be more data-driven. It's important to avoid biases that occur when only a small subset of people review [data][1].
+
+## Collecting the Data
+
+This is largely determinisitc on what the community would decide is the optimial boundry between the validity of the collected data and the privacy of the users. This RFC would propose the data is collected in two majro ways: 
+
+1. Using the [Rust Playground]((https://play.rust-lang.org).
+ - This would hypotechically be done by running a keylogger on the input to the website, or a snapshot tool that takes a snapshot of the input area in a pre-definied period of time. We could ,ake this time period relative to the user's activity (e.g. if a user is idle for a long period of time do not keep snapping at 5 second intervals).  
+2. Built into the Rust Package Manager [Cargo](http://doc.crates.io/guide.html).
+ - Here we can add a --send-diagnostics feature to `Cargo` and create an option in `~/.cargo/config` to automatically send information to a respoitiory server on each `cargo build`.  
+
+
+
+## Data Collected
+
+Inital thoughts on data collection are: 
+
+- any time a user runs Play record the code submitted
+- any time a complication is made record the result (especially any compiler error messages)
+ - record or give the user any options to submit and resources used
+  - Possibly record the way the user interacts with docs.rust-lang using cookies, but this might be a little too privacy invasive
+- record session time (e.g. how long as the window been open without the text input cleared)
+- record lines that have changed (plus timing information)
+
 
 # How We Teach This
 [how-we-teach-this]: #how-we-teach-this
